@@ -7540,7 +7540,7 @@ We call these bits of logic "plugins".
 The are simply functions that will receive a map of the current UI state (by alias name) and will do some calculation.
 They are meant to be side-effect free calculations.
 
-For example a login form we usually don't want them to be able to press "Login" (or enter) until both username and password fields have something in them.
+For example, in a login form we usually don't want users to be able to press "Login" (or enter) until both username and password fields have something in them.
 If the username is an email we might also want to check that it looks like a valid email before allowing submission.
 
 The state machine can come with a simple plugin like this:
