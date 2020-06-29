@@ -5120,7 +5120,7 @@ There are several ways to accomplish these tasks in Fulcro 3: pessimistic transa
 A *pessimistic transaction* is a transaction processing semantic where each mutation in a transaction is processed to completion (full stack) before the next mutation in *that same transaction* does _anything_.
 Pessimistic _transactions_ have no interaction with *each other* (other than guarantees of submission order).
 
-This means that you can code a mutations whose optimistic action checks the result of the prior mutation to decide what to do.
+This means that you can code a mutation whose optimistic action checks the result of the prior mutation to decide what to do.
 This looks like this at the UI layer:
 
 ```
